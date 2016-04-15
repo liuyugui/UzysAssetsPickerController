@@ -165,6 +165,7 @@
     [self menuArrowRotate];
     
 }
+#pragma mark- 修改底部文字位置
 - (void)setupOneMediaTypeSelection
 {
     if(_maximumNumberOfSelectionMedia > 0)
@@ -205,7 +206,8 @@
             self.segmentedControl.hidden = YES;
             self.labelSelectedMedia.hidden = NO;
             if(_maximumNumberOfSelection >1)
-                self.labelSelectedMedia.text = NSLocalizedStringFromTable(@"Choose photos", @"UzysAssetsPickerController", nil);
+//                self.labelSelectedMedia.text = NSLocalizedStringFromTable(@"Choose photos", @"UzysAssetsPickerController", nil);
+                self.labelSelectedMedia.text = NSLocalizedStringFromTable(@"请选择照片", @"UzysAssetsPickerController", nil);
             else
                 self.labelSelectedMedia.text = NSLocalizedStringFromTable(@"Choose a photo", @"UzysAssetsPickerController", nil);
         }
