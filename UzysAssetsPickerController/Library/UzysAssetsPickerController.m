@@ -207,7 +207,7 @@
             self.labelSelectedMedia.hidden = NO;
             if(_maximumNumberOfSelection >1)
 //                self.labelSelectedMedia.text = NSLocalizedStringFromTable(@"Choose photos", @"UzysAssetsPickerController", nil);
-                self.labelSelectedMedia.text = NSLocalizedStringFromTable(@"请选择照片", @"UzysAssetsPickerController", nil);
+                self.labelSelectedMedia.text = NSLocalizedStringFromTable(@"请按顺序选择照片", @"UzysAssetsPickerController", nil);
             else
                 self.labelSelectedMedia.text = NSLocalizedStringFromTable(@"Choose a photo", @"UzysAssetsPickerController", nil);
         }
