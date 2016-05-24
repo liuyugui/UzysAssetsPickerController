@@ -642,12 +642,8 @@
     {
         UzysAssetsPickerController *picker = (UzysAssetsPickerController *)self;
         
-        if([picker.delegate respondsToSelector:@selector(uzysAssetsPickerController:didFinishPickingAssets:)])
+        if(picker.delegate && [picker.delegate respondsToSelector:@selector(uzysAssetsPickerController:didFinishPickingAssets:)])
             [picker.delegate uzysAssetsPickerController:picker didFinishPickingAssets:assets];
-        
-        [self dismissViewControllerAnimated:YES completion:^{
-            
-        }];
     }
 }
 #pragma mark - Helper methods
