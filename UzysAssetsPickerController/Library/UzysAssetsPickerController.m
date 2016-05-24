@@ -49,6 +49,22 @@
 @implementation UzysAssetsPickerController
 
 @synthesize location;
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    
+    [self.navigationItem setHidesBackButton:NO];
+    
+    //设计师要求改变状态栏的颜色，必须！是必须！囧
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+}
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    //设计师要求改变状态栏的颜色，必须！是必须！囧
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    
+}
 
 #pragma mark - ALAssetsLibrary
 
