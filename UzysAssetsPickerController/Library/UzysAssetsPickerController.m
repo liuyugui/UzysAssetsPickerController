@@ -55,14 +55,14 @@
     [self.navigationItem setHidesBackButton:NO];
     
     //设计师要求改变状态栏的颜色，必须！是必须！囧
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
     //设计师要求改变状态栏的颜色，必须！是必须！囧
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
 }
 
