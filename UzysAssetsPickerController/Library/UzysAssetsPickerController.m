@@ -475,13 +475,13 @@
     UILabel *title          = [[UILabel alloc] initWithFrame:rect];
     UILabel *message        = [[UILabel alloc] initWithFrame:rect];
     
-    title.text              = NSLocalizedStringFromTable(@"This app does not have access to your photos or videos.", @"UzysAssetsPickerController",nil);
+    title.text              = NSLocalizedStringFromTable(@"监测到app不能访问相片", @"UzysAssetsPickerController",nil);
     title.font              = [UIFont boldSystemFontOfSize:17.0];
     title.textColor         = [UIColor colorWithRed:129.0/255.0 green:136.0/255.0 blue:148.0/255.0 alpha:1];
     title.textAlignment     = NSTextAlignmentCenter;
     title.numberOfLines     = 5;
     
-    message.text            = NSLocalizedStringFromTable(@"You can enable access in Privacy Settings.", @"UzysAssetsPickerController",nil);
+    message.text            = NSLocalizedStringFromTable(@"请到”设置->隐私->相机”进行设置，允许法大大使用相机", @"UzysAssetsPickerController",nil);
     message.font            = [UIFont systemFontOfSize:14.0];
     message.textColor       = [UIColor colorWithRed:129.0/255.0 green:136.0/255.0 blue:148.0/255.0 alpha:1];
     message.textAlignment   = NSTextAlignmentCenter;
